@@ -1,0 +1,17 @@
+def solution(arr):
+    answer = []
+    #arr=sorted(arr,reverse=True)
+    cnt=min(arr)
+    #print(cnt)
+    
+    arr.remove(cnt)
+    
+    if len(arr)==0:
+        return [-1]
+    else:
+        #answer=arr
+        return arr
+        
+        
+        
+## https://programmers.co.kr/learn/courses/30/lessons/12935?language=python3#
