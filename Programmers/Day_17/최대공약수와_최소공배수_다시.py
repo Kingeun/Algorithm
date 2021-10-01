@@ -1,9 +1,11 @@
-def solution(n, m): -> 다시
+##다시
+
+def solution(n, m):
     answer = []
     max_=[]
-    min_=[]
     
-    for i in range(1,min(n,m)):
+    
+    for i in range(1,min(n,m)+1):
         if n%i==0 and m%i==0:
             max_.append(i)
         
@@ -13,9 +15,6 @@ def solution(n, m): -> 다시
     else :
         answer.append(min(max_))
     
-    for j in range(1,max(n,m)):
-        if n%j==0 or m%j==0:
-            min_.append(j)
-    answer.append(max(min_))
-    
+    min_=(n*m)/min(max_)
+    answer.append(min_)
     return answer
