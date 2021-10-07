@@ -1,6 +1,3 @@
-![image.png](attachment:image.png)
-![image-2.png](attachment:image-2.png)
-
 def gr(n,k):
     cnt = 0
     while True:        
